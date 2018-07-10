@@ -55,3 +55,4 @@
     message.channel.send(banido)
     } else {
       message.reply("você não tem permissão! :x:")
+}
