@@ -2,7 +2,7 @@
    message.delete().catch(O_o=>{});
    if (message.member.hasPermission('BAN_MEMBERS')) {
    const comousar = new Discord.RichEmbed()
-      .setAuthor("Kally", client.user.avatarURL)
+      .setAuthor("BattleBOT", client.user.avatarURL)
       .setTitle("k!ban")
       .setDescription(`Ira banir o usuário mencionado.`)
       .setColor("#60d1f6")
