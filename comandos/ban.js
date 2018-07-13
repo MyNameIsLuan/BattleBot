@@ -58,3 +58,4 @@ module.exports.run = async (client, message, args) =>{
     } else {
       message.reply("você não tem permissão! :x:")
   }
+}
