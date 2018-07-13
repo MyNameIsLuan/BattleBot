@@ -2,7 +2,7 @@
    message.delete().catch(O_o=>{});
    if (message.member.hasPermission('BAN_MEMBERS')) {
    const comousar = new Discord.RichEmbed()
-      .setAuthor("BattleBOT", client.user.avatarURL)
+      .setAuthor("Kally", client.user.avatarURL)
       .setTitle("k!ban")
       .setDescription(`Ira banir o usuário mencionado.`)
       .setColor("#60d1f6")
@@ -40,7 +40,7 @@
       
    const banido = new Discord.RichEmbed()
        .setAuthor(member.user.tag + ' | Ban', member.user.avatarURL)
-       .setDescription(`${member.user.tag} (ID: ${member.user.id}) acaba de ser banido! `)
+       .setDescription(`${member.user.tag} (ID: ${member.user.id}) não respeitou as regras e foi banido! :worried: `)
        .setColor("ff0000")
 
        .setThumbnail("https://i.imgur.com/ZmWM1UT.png")
@@ -55,4 +55,4 @@
     message.channel.send(banido)
     } else {
       message.reply("você não tem permissão! :x:")
-}
+  }
