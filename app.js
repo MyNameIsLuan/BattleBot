@@ -26,9 +26,47 @@ console.log('==============================');
   
 });
 
+client.on("guildMemberRemove", member =>{
+    if(member.guild.id === "414953352422490113"){
+        const leave = new Discord.RichEmbed()
+        .setAuthor(member.user.tag)
+        .setDescription(":outbox_tray: Ele estava usando cheat e foi banido :(!")
+        .setThumbnail(member.user.avatarURL)
+        .setColor("#36393f")
+        .setFooter("Battle BOT - copyright")
+      client.channels.get("415171650980675604").send(leave)
 
+    }
+});
+
+client.on("guildMemberAdd", member =>{
+    if(member.guild.id === "414953352422490113"){
+        const join = new Discord.RichEmbed()
+        .setAuthor(member.user.tag)
+        .setDescription(":inbox_tray: Foi puxado para o maior grupo de Leaker's Brasileiro!")
+        .setThumbnail(member.user.avatarURL)
+        .setColor("#36393f")
+        .setFooter("Battle BOT - copyright")
+      client.channels.get("415171650980675604").send(join)
+      
+    }
+    });
+
+    client.on("guildMemberAdd", member => {
+      if(member.guild.id == "414953352422490113"){
+          const channel = member.guild.channels.get("469960067513450506");
+          channel.setName(`Membros: ${member.guild.memberCount - member.guild.members.filter(m=>m.user.bot).size}`)
+      }
+  });
+  
+  
+  client.on("guildMemberRemove", member => {
+      if(member.guild.id == "414953352422490113"){
+          const channel = member.guild.channels.get("469960067513450506");
+          channel.setName(`Membros: ${member.guild.memberCount - member.guild.members.filter(m=>m.user.bot).size}`)
+      }
+  });
 ;
-
 
 
 
