@@ -80,10 +80,15 @@ client.user.setStatus('dnd')
 client.user.setGame('um tijolinho no Igor!')
 })
 client.on('message', message =>{
-    if(message.content.includes("https://discord.gg/")){
-        message.delete()
+        if(message.content.includes("https://discord.gg/")){
+                if(message.channel.id === "443945943344087051"){
+                        return;
+                }else{
+                    message.delete()
 	message.channel.send(`${message.author}, você não pode divulgar links de outros grupos!`)
     }
+	}
+}
 })
 ;
 
