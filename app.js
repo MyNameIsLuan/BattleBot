@@ -65,7 +65,26 @@ client.on("guildMemberAdd", member =>{
           const channel = member.guild.channels.get("469960067513450506");
           channel.setName(`Membros: ${member.guild.memberCount - member.guild.members.filter(m=>m.user.bot).size}`)
       }
+	  
+	 
+	  
   });
+client.on('message', message =>{
+  if(message.content.includes("https://discord.gg/")){
+      message.delete()
+      if(message.channel.id != "424422351204253700") return message.reply(`${message.author}, Neste grupo, é proibido à divulgação de convites de outros grupos!`)
+  }
+
+client.user.setStatus('online')
+
+client.user.setGame('um tijolinho no Igor!')
+})
+client.on('message', message =>{
+    if(message.content.includes("https://discord.gg/")){
+        message.delete()
+	message.channel.send(`${message.author}, você não pode divulgar links de outros grupos!`)
+    }
+})
 ;
 
 
