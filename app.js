@@ -75,7 +75,7 @@ client.on('message', message =>{
       if(message.channel.id != "424422351204253700") return message.reply(`${message.author}, Neste grupo, é proibido à divulgação de convites de outros grupos!`)
   }
 
-client.user.setStatus('online')
+client.user.setStatus('dnd')
 
 client.user.setGame('um tijolinho no Igor!')
 })
