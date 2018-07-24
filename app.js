@@ -69,11 +69,7 @@ client.on("guildMemberAdd", member =>{
 	 
 	  
   });
-client.on('message', message =>{
-  if(message.content.includes("https://discord.gg/")){
-      message.delete()
-      if(message.channel.id != "424422351204253700") return message.reply(`${message.author}, Neste grupo, é proibido à divulgação de convites de outros grupos!`)
-  }
+
 
 client.user.setStatus('dnd')
 
