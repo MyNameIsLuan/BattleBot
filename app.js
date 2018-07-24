@@ -78,7 +78,7 @@ client.on('message', message =>{
 client.user.setStatus('dnd')
 
 client.user.setGame('um tijolinho no Igor!')
-})
+
 client.on('message', message =>{
         if(message.content.includes("https://discord.gg/")){
                 if(message.channel.id === "443945943344087051"){
