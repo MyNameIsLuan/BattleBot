@@ -26,7 +26,7 @@ console.log('==============================');
   
 });
 client.on('message', message =>{
-    if(message.content.includes("@» I'm Luan «#4750"){
+    if(message.content.includes(`@» I'm Luan «#4750`){
         message.delete()
        message.channel.send(`${message.author}, O Luan vai te arrebentar na pohada!`)
     }
