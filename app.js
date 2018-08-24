@@ -25,8 +25,6 @@ console.log('==============================');
 //gameloop.run(client);
   
 });
-
-nesse código, como coloco que só permite link em um determinado chat?
 client.on("guildMemberRemove", member =>{
     if(member.guild.id === "414953352422490113"){
         const leave = new Discord.RichEmbed()
