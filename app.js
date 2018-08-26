@@ -17,7 +17,7 @@ client.login(process.env.BattleTOKEN);
 client.on('ready', () =>{
 console.log('\n==============================');
 console.log('CONECTADO! BOT ONLINE!');
-console.log(`O meu prefixo � ${prefix}`);
+console.log(`O meu prefixo  ${prefix}`);
 console.log('==============================');
 
 
